@@ -2,8 +2,8 @@ class Animal:
 
     alive = True
     fed = False
-    def eat(self, food):
-        if Plant.edible is True:
+    def eat(self, food):# здесь у food может быть или Fruit, или Flower):
+        if food.edible:
             Animal.fed = True
             print(f'{self.name} съел {food.name}')
         else:
